@@ -1,0 +1,10 @@
+{
+  "name": "TikTok AI Power-Up",
+  "description": "A premium social media management dashboard for TikTok content creators. Features include a content calendar, performance analytics, and AI-powered tools for comment responses, video descriptions, and hashtag generation, all wrapped in a sleek, neon-accented UI.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

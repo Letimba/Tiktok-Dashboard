@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok AI Power-Up</title>
+    <meta name="description" content="A premium social media management dashboard for TikTok content creators. Features include a content calendar, performance analytics, and AI-powered tools for comment responses, video descriptions, and hashtag generation, all wrapped in a sleek, neon-accented UI." />
+    <meta property="og:title" content="TikTok AI Power-Up" />
+    <meta property="og:description" content="A premium social media management dashboard for TikTok content creators. Features include a content calendar, performance analytics, and AI-powered tools for comment responses, video descriptions, and hashtag generation, all wrapped in a sleek, neon-accented UI." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'tiktok-cyan': '#25F4EE',
+              'tiktok-pink': '#FE2C55',
+              // Light Theme (becomes default)
+              'background': '#F9FAFB',
+              'surface': '#FFFFFF',
+              'primary-text': '#111827',
+              'secondary-text': '#6B7280',
+              'border-color': '#E5E7EB',
+              // Dark Theme Colors (for use with dark: prefix)
+              'dark-background': '#121212',
+              'dark-surface': '#1E1E1E',
+              'dark-card': '#282828',
+              'dark-text-primary': '#FFFFFF',
+              'dark-text-secondary': '#AAAAAA',
+              'dark-border-color': 'rgba(255, 255, 255, 0.1)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background dark:bg-dark-background">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
